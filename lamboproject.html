@@ -4,19 +4,26 @@
     <title>Lamborghini</title>
   </head>
   <meta name="viewport" content="width=device-width" initial scale="1.0" />
-  
+  <script src="https://kit.fontawesome.com/bb44f1acb8.js"crossorigin="anonymous"></script>
   <style>
    @font-face {
      
      src: url("coolvetica\ rg\ it.ttf");
      font-family: 'coolvet';
    }
+   
     * {
       box-sizing: border-box;
     }
+    .bod{
+      display:flex;
+
+
+      
+    }
     .sidebar {
-      width: 12%;
-      height: 120vh;
+      flex-basis: 12%;
+     min-height: 220vh;
       background-color: #ddb321;
       position: fixed;
       top: 0px;
@@ -41,24 +48,26 @@
     }
    
     .container {
-      width: 88%;
+      flex-basis: 88%;
+      min-height: 65vh;
       min-height: 700px;
         background-color: black;
        color: white;
-      margin-left: 12%;
+      margin-left: 20%;
     }
     .header {
-      min-height: 65vh;
+      
       background-color: black;
-      background-image: url("images/lambo2.jpg");
+      background-image: url("images/lambo6.jpg");
       background-position: center;
       background-size: cover;
-      font-size: 2rem;
+      font-size: 2.7rem;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-weight: 500;
       display: flex;
       flex-direction: column;
-      position: relative;
+      position:;
+    
     }
 
     h2,
@@ -68,7 +77,13 @@
       margin-top: 10px;
     }
    .header p {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
+    }
+    h2{
+      text-align:left;
+      margin-left: 32px;
+      margin-top: -70px;
+      
     }
     
     
@@ -84,7 +99,7 @@
       border: black;
     }
     .header:hover {
-      background-image: url("images/lambo6.jpg");
+      background-image: url("images/veneno.jpg");
       transition-delay: 100ms;
     }
      .section1{
@@ -111,7 +126,7 @@
               padding:40px;
               
     }
-    .line ,.line2,.line3{
+    .line ,.line2,.line3,.line4{
       width:100%;
       height:2px;
       color: white;
@@ -119,7 +134,7 @@
       top:0px;
       
     }
-   .heading1 ,.heading2,.heading3{
+   .heading1 ,.heading2,.heading3,.heading4{
      background-color: #ff7800;
      color:white;
      width:100px;
@@ -127,18 +142,24 @@
      text-align: center;
      padding:5px;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    
-   }
-   .abtimg{
+    }
+
+   .abtimg,.productimg{
      display: flex;
-     justify-content: space-evenly;
+     justify-content:space-around;
      flex-wrap: wrap;
-     align-items: center;
+     align-items:;
      
-   }
-   .abtimg>div {
-      flex-basis:30%;
+     
+     }
+
+   .abtimg>div,.productimg>div {
+      flex-basis:33.3333%;
+       
       text-align: center;
+    }
+    .productimg{
+      flex-wrap:;
     }
    h4{
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -180,13 +201,14 @@
      
    }
    .section3-1>div{
-     flex-basis:30%;
+     flex-basis:33.3333%;
      background-color: #0BB5FF;
      height:50px;
      text-align: center;
      font-size: 1.2rem;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
+    margin:0px 5px;
     
    }
    .grid-container{
@@ -246,23 +268,53 @@
   text-align: center;
   font-size: 1.7rem;
   font-weight: 500;
-  
 }
-.productimg{
-  display: flex;
-  justify-content: space-evenly;
-  flex-wrap:wrap;
-  align-items: center;
-}
+
 .productimg>div{
-  flex-basis: 30%;
-  text-align: center;
-  padding:20px;
+  padding:;
+  }
+  .section5{
+  padding:40px;
   
 }
+.line4,.heading4
+{
+  background-color:purple;
+  
+}
+  .map{
+    text-align: center;
+   
+  }
+  
+  .footer>form{
+    display: flex;
+    justify-content:space-between;
+    
+    
+  }
+  form>div{
+  
+    align-self: center;
+  }
+
+.mess  {
+  
+}
+.footer2_1{
+  background-color: #ddb321 ;
+  min-height:150px;
+  padding:40px;
+    font-size: 2.7em;
+  text-align: center  ;
+  border: 2px solid white;
+}
+
+
   </style>
   <body>
-    <div class="sidebar">
+    <div class="bod">
+      <div class="sidebar">
       <div>
         <img src="images/logo.jpg" width="px" height="px" />
       </div>
@@ -272,7 +324,7 @@
       <div>Accessories</div>
       <div>Blog</div>
     </div>
-
+    
     <div class="container">
       <div class="header">
         <p>VENENO LP 750-4 ROADSTER IN GENEVA</p>
@@ -290,8 +342,8 @@
         <div class="heading1">About Us</div><br><br><br>
          <div class="abtimg">
        <div> <img src="images/ceo.jpg" height="310px"><h4>STEPHAN WINKELMANN</h4><p>President & Chief Executive Officer</p></div>
-       <div><img src="images/chief.jpg" width="300px" height="310px"><h4> MAURIZIO REGGIANI</h4><p>Chief Technical Officer</p></div>
-       <div><img src="images/manufacturin.jpg" height="310px"><h4>RANIERI NICCOLI</h4><p>Chief Manufacturing Officer</p></div>
+       <div><img src="images/chief.jpg" width="320px" height="310px"><h4> MAURIZIO REGGIANI</h4><p>Chief Technical Officer</p></div>
+       <div><img src="images/manufacturin.jpg" width="330px" height="310px"><h4>RANIERI NICCOLI</h4><p>Chief Manufacturing Officer</p></div>
        </div><br><br><br><br><br>
       
         <div class="section2-1">
@@ -333,15 +385,34 @@ Lamborghini also values and supports Italy's significant cultural heritage by su
         <div class="heading3" >Accessories</div>
         <h3>Our Bestsellers</h3><hr><br><br>
         <div class="productimg">
-         <div> <img src="images/cap.jpg"><p>Automobili Lamborghini Corsa Cap</p><p>$49.00</p></div>
-         <div><img src="images/perfume.jpg" width="" height="247px"><p>Lamborghini Essenza Cologne</p><p>$150.60</p></div>
-          <div><img src="images/bag.jpg"><p>Lamborghini Girgio Backpack </p><p>$306.40</p></div><br><br>
-          <div> <img src="images/keychain.jpg" width="201px" height="247px"><p>Shield Logo Keyring</p><p>$29.00</p></div>
-          <div><img src="images/phone.jpg" width="326px" height="246px"><p>Tonino Lamborghini Tauri 88'</p><p>$4299.00</p></div>
-          <div><img src="images/watch2.jpg" height="247px" width="201px"> <p> Tonino 3018 Spyder Chronograph<p>$2599.00</p></div>
-         
+         <div> <img src="images/cap.jpg" width="320px " height="270px"><p>Automobili Lamborghini Corsa Cap</p><p>$49.00</p></div>
+         <div><img src="images/perfume.jpg" width="320px" height="270px"><p>Lamborghini Essenza Cologne</p><p>$150.60</p></div>
+          <div><img src="images/bag.jpg" width="320px" height="270px"><p>Lamborghini Girgio Backpack </p><p>$306.40</p></div>
+          <div> <img src="images/keychain.jpg" width="320px" height="270px"><p>Shield Logo Keyring</p><p>$29.00</p></div>
+          <div><img src="images/phone.jpg" width="320px" height="270px"><p>Tonino Lamborghini Tauri 88'</p><p>$4299.00</p></div>
+          <div><img src="images/watch2.jpg" height="270px" width="320px"> <p> Tonino 3018 Spyder Chronograph<p>$2599.00</p></div>
           
-        </div>
+</div>
           </div>
-     </body>
+          <div class="section5">
+             <div class="line4"></div>
+        <div class="heading4" >Contact Us</div><br><br>
+         <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d6137599.033562824!2d8.294507110610994!3d41.31159310982879!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e6!4m0!4m5!1s0x4786c108a410471d%3A0xcd2f831cd7ce5a87!2sLamborghini%20Milano%2C%20Viale%20Renato%20Serra%2C%2061%2C%2020149%20Milano%20MI%2C%20Italy!3m2!1d45.4893388!2d9.150009899999999!5e0!3m2!1sen!2sin!4v1626531525616!5m2!1sen!2sin"  style="border:0;" allowfullscreen="" loading="lazy" width="1010" height="300" ></iframe></div>
+                <br><br> <br><div class="footer">
+            <form>
+             <div> Name:*<br><input type="text" style="font-size: 18pt; height: 40px; width:320px; "></div>
+             <div> Email:*<br><input type="text" style="font-size: 18pt; height: 40px; width:320px; "></div>
+             <div> Subject:*<br><input type="text"style="font-size: 18pt; height: 40px; width:320px; "></div>
+          </form>
+        </div><br><br>
+                    <div class="mess">Message*<br><textarea rows="9" cols="142"></textarea></div>
+                    </div>
+                  <div class="footer2_1">
+                    <i class="fab fa-facebook-square icon-4x"></i>
+                    <i class="fab fa-twitter-square"></i>
+                    <i class="fab fa-instagram-square"></i> 
+                    <i class="fab fa-linkedin"></i>
+                    <i class="fab fa-google-plus"></i>
+                  </div>  
+                </body>
 </html>
