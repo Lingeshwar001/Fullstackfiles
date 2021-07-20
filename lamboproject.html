@@ -23,7 +23,7 @@
     }
     .sidebar {
       flex-basis: 12%;
-     min-height: 410vh;
+     min-height: 220vh;
       background-color: #ddb321;
       position: fixed;
       top: 0px;
@@ -39,7 +39,7 @@
       padding:30px;
       border: 1px solid grey;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 1.5rem;
+      font-size: 1rem;
       
     }
     .sidebar > img {
@@ -53,8 +53,7 @@
       min-height: 700px;
         background-color: black;
        color: white;
-      margin-left:41%;
-     
+      margin-left:12.1%;
     }
     .header {
       
@@ -62,7 +61,7 @@
       background-image: url("images/lambo6.jpg");
       background-position: center;
       background-size: cover;
-      font-size: 6rem;
+      font-size: 2.7rem;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
       font-weight: 500;
       display: flex;
@@ -78,7 +77,7 @@
       margin-top: 10px;
     }
    .header p {
-      font-size: 3rem;
+      font-size: 1.8rem;
     }
     h2{
       text-align:left;
@@ -109,7 +108,7 @@
       padding:5px 20px;
     }
     .section1 :nth-child(1) {
-      font-size: 4rem;
+      font-size: 2rem;
       font-weight:500;
       text-align: center;
       font-family:'coolvet';
@@ -119,7 +118,7 @@
       }
    
     .section1 p{
-      font-size:3rem;
+      font-size:1.2rem;
       text-align: center;
     }
 
@@ -129,7 +128,7 @@
     }
     .line ,.line2,.line3,.line4{
       width:100%;
-      height:4px;
+      height:2px;
       color: white;
       background-color:#ff7800; 
       top:0px;
@@ -143,7 +142,6 @@
      text-align: center;
      padding:5px;
      font-family: Verdana, Geneva, Tahoma, sans-serif;
-     font-size:1.4rem;
     }
 
    .abtimg,.productimg{
@@ -151,12 +149,12 @@
      justify-content:space-around;
      flex-wrap: wrap;
      align-items:;
-     font-size:3rem;
+     
      
      }
 
    .abtimg>div,.productimg>div {
-      flex-basis:50%;
+      flex-basis:33.3333%;
        
       text-align: center;
     }
@@ -165,23 +163,20 @@
     }
    h4{
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-     font-size: 4rem;
+     font-size: large;
    }
    .abtimg p{
      font-family:sans-serif;
    }
    .section2-1{
     display:flex;
-     flex-direction:row;
      padding:10px;
      /*color:#ff7800;*/
-     font-size: 3rem;
-     flex-wrap:wrap;
      }
    .section2-1 :nth-child(1){
     
-        flex-basis: 100%;
-        font-size: 4rem;
+        flex-basis: 60%;
+        font-size: 1.1rem;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       /*width: 80%;*/
       
@@ -190,9 +185,8 @@
    /* width:70%;
     margin-top:100px;
     margin-left:40px;*/
-   /* margin-left: 60px;
-    margin-top: 80px;*/
-     flex-basis:100%
+    margin-left: 60px;
+    margin-top: 80px;
    }
    .section3{
      padding:40px;
@@ -220,19 +214,19 @@
    .grid-container{
      padding:40px;
      display: grid;
-     grid-template-rows:100% 100%;
-     grid-row-gap:10px;
-     font-size:3rem;
+     grid-template-columns:70% 30%;
+     grid-column-gap:20px;
+     font-size:1.1rem;
      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      
    }
    .percentage{
-     width:100%;
-     font-size:2rem;
+     width:20%;
+     font-size:1rem;
      text-align: center;
      display:grid;
      grid-template-columns: auto;
-     grid-gap:10px;
+     grid-gap:20px;
      }
 
 .percentage>div{
@@ -308,14 +302,71 @@
   
 }
 .footer2_1{
-  background-color: #ddb321 ;
+  background-color:black;
   min-height:150px;
   padding:40px;
     font-size: 2.7em;
   text-align: center  ;
   border: 2px solid white;
 }
+@media only screen and
+(max-width:768px){
+      .sidebar>div{
+        font-size:1.6rem;
+        
+      }
+      .container{
+        margin-left:28.1%;
+      }
+      .header{
+        font-size: 5rem;
+      }
+      .header>p{
+        font-size:3rem ;
+      }
+      .section1 :nth-child(1){
+        font-size:4rem;
+      }
+      .section1>p{
+        font-size: 2rem;
+      }
+       .line ,.line2,.line3,.line4{
+    
+      height:8px;
+ }
+   .heading1 ,.heading2,.heading3,.heading4{
+    
+     width:200px;
+     height:50px;
+     padding:5px;
+     font-size: 1.8rem;
+     
+    }
 
+    .abtimg>div , .abtimg>p{
+      flex-basis: 100%;
+      font-size: 2rem;
+      padding:120px;
+    }
+    h4{
+      font-size:2.5rem ;
+    }
+.section2-1 :nth-child(1){
+  font-size: 3rem;
+}
+.section2-1>p{
+  font-size: 2rem;
+}
+.section2-1{
+  flex-direction: column;
+  
+}
+img{
+  width:90%;
+  min-height:90%;
+}
+
+}
 
   </style>
   <body>
@@ -347,7 +398,7 @@
         <div class="line"></div>
         <div class="heading1">About Us</div><br><br><br>
          <div class="abtimg">
-       <div> <img src="images/ceo.jpg" height="310px"><h4>STEPHAN WINKELMANN</h4><p>President & Chief Executive Officer</p></div>
+       <div class="ceo"> <img src="images/ceo.jpg" height="310px"><h4>STEPHAN WINKELMANN</h4><p>President & Chief Executive Officer</p></div>
        <div><img src="images/chief.jpg" width="320px" height="310px"><h4> MAURIZIO REGGIANI</h4><p>Chief Technical Officer</p></div>
        <div><img src="images/manufacturin.jpg" width="330px" height="310px"><h4>RANIERI NICCOLI</h4><p>Chief Manufacturing Officer</p></div>
        </div><br><br><br><br><br>
