@@ -50,6 +50,10 @@
       color: white;
       height: 470px;
     }
+    .header:hover {
+      background-image: url("images/veneno.jpg");
+      transition-delay: 100ms;
+    }
 
     h2,
     .header p {
@@ -257,7 +261,7 @@
 
     @media only screen and (max-width: 768px) {
       .container {
-        min-height: 500vh;
+        min-height: 700vh;
       }
       .footer > form {
         flex-direction: column;
@@ -518,24 +522,9 @@
             <br />
             <div class="footer">
               <form>
-                <div>
-                  Name:*<br /><input
-                    type="text"
-                    style="font-size: 18pt; height: 40px; width: 320px"
-                  />
-                </div>
-                <div>
-                  Email:*<br /><input
-                    type="text"
-                    style="font-size: 18pt; height: 40px; width: 320px"
-                  />
-                </div>
-                <div>
-                  Subject:*<br /><input
-                    type="text"
-                    style="font-size: 18pt; height: 40px; width: 320px"
-                  />
-                </div>
+                <div>Name:*<br /><input type="text" /></div>
+                <div>Email:*<br /><input type="text" /></div>
+                <div>Subject:*<br /><input type="text" /></div>
               </form>
             </div>
             <br /><br />
