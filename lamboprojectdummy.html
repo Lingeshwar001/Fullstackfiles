@@ -35,7 +35,7 @@
     .container {
       margin-left: 155px;
       background-color: black;
-      height: 580vh;
+      min-height: 580vh;
       max-width: 100%;
     }
     .header {
@@ -81,7 +81,6 @@
     }
     .section1 {
       background-color: white;
-
       padding: 5px 20px;
     }
     .section1 :nth-child(1) {
@@ -138,24 +137,17 @@
 
     .section2-1 {
       display: flex;
-
-      /*color:#ff7800;*/
     }
     .section2-1 :nth-child(1) {
       flex-basis: 60%;
       font-size: 1.1rem;
       font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      /*width: 80%;*/
     }
     .workshopimg {
-      /* width:70%;
-    margin-top:100px;
-    margin-left:40px;*/
       margin-left: 60px;
       margin-top: 80px;
     }
-    .section3 {
-    }
+
     .line2,
     .heading2 {
       background-color: #66d3fa;
@@ -212,8 +204,7 @@
     .india:hover {
       width: 120px;
     }
-    .section4 {
-    }
+
     .line3,
     .heading3 {
       background-color: #32cd32;
@@ -226,8 +217,6 @@
       font-weight: 500;
     }
 
-    .productimg > div {
-    }
     .productimg {
       display: flex;
       flex-wrap: wrap;
@@ -263,6 +252,14 @@
       .container {
         min-height: 700vh;
       }
+      h2 {
+        margin-left: 18px;
+
+        font-size: 3.8rem;
+      }
+      .header > p {
+        font-size: 1rem;
+      }
       .footer > form {
         flex-direction: column;
       }
@@ -282,10 +279,10 @@
       .heading2,
       .heading3,
       .heading4 {
-        width: 150px;
-        height: 40px;
+        width: 100px;
+        height: 35px;
         padding: 5px;
-        font-size: 1.2rem;
+        font-size: 1rem;
       }
 
       .abtimg > div,
@@ -306,7 +303,7 @@
       }
       .section3-1 > div {
         padding: 20px;
-        font-size: 1.5ssrem;
+        font-size: 1.5srem;
 
         margin: 10px;
       }
@@ -345,6 +342,30 @@
       .productimg > div {
         flex-basis: 50%;
         padding: 20px;
+      }
+    }
+    @media only screen and (max-width: 576px) {
+      .sidebar {
+        display: flex;
+        justify-content: space-evenly;
+        position: fixed;
+        min-height: 10px;
+        width: 97%;
+        margin-top: px;
+      }
+      .sidebar > div {
+        font-size: x-small;
+        padding: 10px;
+        width: 100%;
+        min-height: 90px;
+      }
+      .container {
+        background-color: chartreuse;
+        margin-left: 0px;
+        margin-top: 90px;
+      }
+      .percentage > div {
+        font-size: 1rem;
       }
     }
   </style>
@@ -528,9 +549,7 @@
               </form>
             </div>
             <br /><br />
-            <div class="mess">
-              Message*<br /><textarea rows="9" cols="142"></textarea>
-            </div>
+            <div class="mess">Message*<br /><textarea rows="9"></textarea></div>
           </div>
           <div class="footer2_1">
             <i class="fab fa-facebook-square icon-2x"></i>
