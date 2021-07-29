@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>testcase</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <style>
+      /* img {
+        max-width: 100%;
+        width: 100%;
+      }*/
+
+      .navbar {
+        background-color: greenyellow;
+        color: white;
+        height: 55px;
+      }
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      .btn-warning {
+        background-color: orangered;
+      }
+      .carousel-caption {
+        top: 20%;
+      }
+      .carousel-caption p {
+        background-color: black;
+        opacity: 0.5;
+      }
+
+      h2 {
+        background-color: orangered;
+        align-self: center;
+        width: 200px;
+        margin-left: 37%;
+      }
+      .btn {
+        color: white;
+      }
+      span {
+        font-size: 1.5rem;
+        font-weight: 700;
+      }
+      .dropdown-menu {
+        background-color: orangered;
+        padding: 5px;
+        text-align: center;
+      }
+      .dropdown-item:hover {
+        background-color: greenyellow;
+        color: white;
+      }
+      .carousel-control-prev-icon,
+      .carousel-control-next-icon {
+        background-color: orangered;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <span class="brandname ms-5">MODUS versus</span>
+      <div class="btn-group me-5" role="group">
+        <button class="btn btn-success" type="button">HOME</button>
+        <button class="btn" type="button">ABOUT</button>
+        <button class="btn" type="button">SERVICES</button>
+        <div class="dropdown">
+          <button
+            class="btn btn-warning dropdown-toggle"
+            data-bs-toggle="dropdown"
+            type="button"
+            id="btn-Drop"
+          >
+            PORTFOLIO
+          </button>
+          <div class="dropdown-menu" aria-labelledby="btn-Drop">
+            <a class="dropdown-item" href="#">portfolio1</a>
+            <a class="dropdown-item" href="#">portfolio2</a>
+            <a class="dropdown-item" href="#">portfolio3</a>
+          </div>
+        </div>
+
+        <button class="btn" type="button">BLOG</button>
+        <button class="btn" type="button">FEATURES</button>
+        <button class="btn" type="button">CONTACTS</button>
+      </div>
+    </nav>
+
+    <div
+      id="carouselSlide"
+      class="carousel slide"
+      data-bs-ride="carousel"
+      data-bs-interval="1000"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/scenery4.jpg" class="w-100" />
+
+          <div class="carousel-caption d-none d-md-block">
+            <h2>VESTIBULUM</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/scenery5.jpg" class="w-100" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>VESTIBULUM</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="images/scenery.jpg" class="w-100" />
+          <div class="carousel-caption d-none d-md-block">
+            <h2>VESTIBULUM</h2>
+            <p>
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy text
+              ever since the 1500s,
+            </p>
+          </div>
+        </div>
+        <a
+          class="carousel-control-prev"
+          href="#carouselSlide"
+          role="button"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a
+          class="carousel-control-next"
+          href="#carouselSlide"
+          role="button"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
+      <ol class="carousel-indicators">
+        <li
+          data-bs-target="#carouselSlide"
+          data-bs-slide-to="0"
+          class="active"
+        ></li>
+        <li data-bs-target="#carouselSlide" data-bs-slide-to="1"></li>
+        <li data-bs-target="#carouselSlide" data-bs-slide-to="2"></li>
+      </ol>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
