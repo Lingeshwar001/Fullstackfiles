@@ -16,7 +16,7 @@
       }*/
 
       .navbar {
-        background-color: chartreuse;
+        background-color: lightgreen;
         color: white;
         height: 55px;
       }
@@ -46,11 +46,12 @@
       .btn,
       .btn-group {
         color: white;
-        font-weight: 700;
+        font-weight: 900;
+        font-size: x-small;
       }
       span {
         font-size: 1.5rem;
-        font-weight: 900;
+        font-weight: 700;
       }
       .dropdown-menu {
         background-color: orangered;
@@ -58,18 +59,12 @@
         text-align: center;
       }
       .dropdown-item:hover {
-        background-color: chartreuse;
+        background-color: lightgreen;
         color: white;
       }
       .carousel-control-prev-icon,
       .carousel-control-next-icon {
         background-color: orangered;
-      }
-      /*.btn {
-        font-size: x-small;
-        margin-right: 30px;
-      }*/
-      .brandname {
       }
     </style>
   </head>
@@ -77,12 +72,12 @@
     <nav class="navbar">
       <span class="brandname ms-5">MODUS versus</span>
       <div class="btn-group me-5" role="group">
-        <button class="btn btn-success btn-sm" type="button">HOME</button>
-        <button class="btn btn-sm" type="button">ABOUT</button>
-        <button class="btn btn-sm" type="button">SERVICES</button>
+        <button class="btn btn-success" type="button">HOME</button>
+        <button class="btn" type="button">ABOUT</button>
+        <button class="btn" type="button">SERVICES</button>
         <div class="dropdown">
           <button
-            class="btn btn-warning dropdown-toggle btn-sm"
+            class="btn btn-warning dropdown-toggle"
             data-bs-toggle="dropdown"
             type="button"
             id="btn-Drop"
@@ -96,18 +91,13 @@
           </div>
         </div>
 
-        <button class="btn btn-sm" type="button">BLOG</button>
-        <button class="btn btn-sm" type="button">FEATURES</button>
-        <button class="btn btn-sm" type="button">CONTACTS</button>
+        <button class="btn" type="button">BLOG</button>
+        <button class="btn" type="button">FEATURES</button>
+        <button class="btn" type="button">CONTACTS</button>
       </div>
     </nav>
 
-    <div
-      id="carouselSlide"
-      class="carousel slide"
-      data-bs-ride="carousel"
-      data-bs-interval=""
-    >
+    <div id="carouselSlide" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-inner">
         <div class="carousel-item active">
           <img src="images/scenery4.jpg" class="w-100" />
