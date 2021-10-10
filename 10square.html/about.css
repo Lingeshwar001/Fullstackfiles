@@ -45,6 +45,8 @@
   font-family: "Roboto", sans-serif;
   font-weight: 900;
 }
+#img2 {
+}
 input {
   border-top: hidden;
   border-left: hidden;
@@ -103,4 +105,88 @@ form {
   height: 100%;
   width: 100%;
   position: absolute;
+}
+@media screen and (max-width: 600px) {
+  #row1 {
+    display: flex;
+    min-height: 30px;
+  }
+  .flex_nav {
+    display: flex;
+    margin-left: auto;
+    margin-right: 20px;
+  }
+  #row2 {
+    font-size: 2vw;
+    padding: 0 40px;
+    text-align: justify;
+    margin-top: -28px;
+  }
+  #row3 {
+    margin-top: -30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  #row3 > h3 {
+    margin-left: -10px;
+    text-align: left;
+    font-size: 1.8vw;
+  }
+  #row4 {
+    padding: 10px;
+    margin-top: 0px;
+    margin-top: 5px;
+  }
+  #info_grid {
+    margin-top: 20px;
+    font-size: 1.8vw;
+    padding: 0px 20px;
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+  .sub_btn {
+    padding: 5px;
+    min-width: 50px;
+    margin-right: 40px;
+  }
+
+  .map-responsive {
+    top: -26%;
+  }
+  .map-responsive iframe {
+    width: 200px;
+    height: 90px;
+  }
+}
+@media screen and (max-width: 900px) {
+  #row2 {
+    font-size: 1.8vw;
+    padding: 0 50px;
+    text-align: justify;
+    margin-top: -28px;
+  }
+  #row3 {
+    margin-top: -30px;
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 0 50px;
+  }
+
+  #row3 > h3 {
+    margin-left: -18px;
+    text-align: left;
+    font-size: 1.8vw;
+  }
+  #row4 {
+    padding: 50px;
+    margin-top: 0px;
+  }
+  .sub_btn {
+    padding: 9px;
+  }
+  .map-responsive {
+    bottom: 15%;
+  }
 }
